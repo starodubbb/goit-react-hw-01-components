@@ -1,0 +1,43 @@
+.table {
+  display: block;
+  width: 400px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tableHead {
+  display: block;
+  background-color: #06bbd3;
+}
+
+.tableBody {
+  display: block;
+}
+
+.tableRow {
+  display: flex;
+  align-items: center;
+}
+
+.tableRow:nth-child(2n) {
+  background-color: #ecf1f4;
+}
+
+.tableCell {
+  display: flex;
+  width: calc(100% / 3);
+  height: 100px;
+  height: 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.tableCell + .tableCell {
+  border-left: 1px solid #e2e1e1;
+}
