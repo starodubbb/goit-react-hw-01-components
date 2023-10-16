@@ -34,5 +34,3 @@ Statistics.propTypes = {
     })
   ),
 };
-
-// { "id": "id-1", "label": ".docx", "percentage": 22 },
