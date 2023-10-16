@@ -4,6 +4,8 @@
   margin-bottom: 50px;
   margin-inline: auto;
 
+  font-size: 14px;
+
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: #fff;
@@ -13,6 +15,11 @@
 .tableHead {
   display: block;
   background-color: #06bbd3;
+  color: #fff;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
 }
 
 .tableBody {

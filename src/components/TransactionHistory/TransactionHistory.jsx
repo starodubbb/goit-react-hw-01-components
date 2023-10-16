@@ -12,12 +12,14 @@ export function TransactionHistory({ transactions }) {
         </tr>
       </thead>
       <tbody className={css.tableBody}>
-        {transactions.map(item => {
+        {transactions.map(({ id, type, amount, currency }) => {
+          const capitalizedType = type.charAt(0).toUpperCase() + type.slice(1);
+
           return (
-            <tr className={css.tableRow} key={item.id}>
-              <td className={css.tableCell}>{item.type}</td>
-              <td className={css.tableCell}>{item.amount}</td>
-              <td className={css.tableCell}>{item.currency}</td>
+            <tr className={css.tableRow} key={id}>
+              <td className={css.tableCell}>{capitalizedType}</td>
+              <td className={css.tableCell}>{amount}</td>
+              <td className={css.tableCell}>{currency.toUpperCase()}</td>
             </tr>
           );
         })}
